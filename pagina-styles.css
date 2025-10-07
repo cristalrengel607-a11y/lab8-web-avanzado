@@ -1,0 +1,98 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+body {
+  min-height: 100vh;
+  background: burlywood;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  background: green;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ---------- MENÚ ---------- */
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+  transition: background-color .3s;
+}
+
+.menu a:hover {
+  background-color: gray;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* ---------- MAIN ---------- */
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* ---------- SECCIONES ---------- */
+.seccion {
+  background: blue;
+  color: white;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: transform .3s ease;
+}
+
+.seccion:hover {
+  transform: translateY(-10px);
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
